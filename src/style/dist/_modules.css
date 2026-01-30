@@ -18,6 +18,7 @@
 
 .contact_item {
   display: flex;
+  align-items: center;
 }
 
 .my_contact,
@@ -29,6 +30,8 @@
 
 .my_contact {
   display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
   justify-content: space-between;
 }
 

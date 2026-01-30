@@ -126,4 +126,8 @@ html {
   .title_name.small_screen {
     font-weight: 400;
   }
+
+  .list_item_title {
+    font-size: 14px;
+  }
 }
