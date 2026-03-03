@@ -150,6 +150,15 @@ body {
   display: none;
 }
 
+.wrapper_portfolio {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper_portfolio .experience_list_desc {
+  margin-bottom: 0;
+}
+
 .header {
   padding: 30px 10px 0;
   text-align: center;

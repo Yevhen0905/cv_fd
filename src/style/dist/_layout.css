@@ -51,3 +51,12 @@ body {
 .sidebar_specialty {
   display: none;
 }
+
+.wrapper_portfolio {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper_portfolio .experience_list_desc {
+  margin-bottom: 0;
+}
