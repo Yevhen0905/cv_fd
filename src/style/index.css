@@ -153,7 +153,8 @@ body {
 .wrapper_portfolio {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .wrapper_portfolio .experience_list_desc {
   margin-bottom: 0;
