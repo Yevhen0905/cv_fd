@@ -118,9 +118,6 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
   padding: 0 15px;
 }
 
@@ -131,28 +128,27 @@ body {
 }
 
 .section_content {
-  max-width: 840px;
   width: 100%;
   padding: 20px 20px 25px;
   color: #3a3535;
-  border-right: 1px dashed;
 }
 
 .title {
-  border-bottom: 1px dashed;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  font-size: 25px;
-  line-height: 32px;
+  text-align: center;
+  border-bottom: 2px solid;
+  margin-bottom: 9px;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 600;
   font-style: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .icon {
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
+  color: #3939d4;
 }
 
 .sidebar_name,
@@ -160,8 +156,18 @@ body {
   display: none;
 }
 
+.wrapper_portfolio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.wrapper_portfolio .experience_list_desc {
+  margin-bottom: 0;
+}
+
 .header {
-  padding: 30px 10px;
+  padding: 30px 10px 0;
   text-align: center;
 }
 
@@ -179,16 +185,22 @@ body {
 }
 
 .contact_item {
-  margin-bottom: 12px;
   display: flex;
-  gap: 10px;
+  align-items: center;
 }
 
 .my_contact,
 .tech_skill,
 .soft_skill,
 .block_language {
-  margin-bottom: 35px;
+  margin-bottom: 8px;
+}
+
+.my_contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: space-between;
 }
 
 .contact_text {
@@ -203,25 +215,29 @@ body {
   display: block;
 }
 
+.list_wrapper {
+  justify-content: space-between;
+}
+
 .list {
   padding-left: 24px;
 }
 
 .list_item {
-  margin-bottom: 9px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .block_language_text {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 600;
 }
 
 .language_text_item {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -245,13 +261,12 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #5b5757;
-  font-style: italic;
 }
 
 .about,
 .my_project,
 .work_experience {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .project_list_item {
@@ -312,9 +327,8 @@ body {
   font-weight: 600;
 }
 
-.experience_list,
-.education_block {
-  margin-bottom: 23px;
+.experience_list {
+  margin-bottom: 10px;
 }
 
 .experience_list_desc {
@@ -358,6 +372,24 @@ body {
   font-weight: 400;
   color: #5b5757;
   font-size: 15px;
+}
+
+.wrapper_education_language {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrapper_education_language .my_education {
+  width: 50%;
+}
+.wrapper_education_language .block_language {
+  width: 50%;
+}
+.wrapper_education_language .title {
+  text-align: start;
+}
+.wrapper_education_language .education_block {
+  margin: 0 10px 10px 0;
 }
 
 .contact_link:hover {
@@ -496,5 +528,9 @@ html {
 
   .title_name.small_screen {
     font-weight: 400;
+  }
+
+  .list_item_title {
+    font-size: 14px;
   }
 }
